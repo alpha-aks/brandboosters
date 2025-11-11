@@ -6,8 +6,8 @@ export default function Principles() {
 		<section className="w-full padding-y rounded-t-[20px] bg-background">
 			<div>
 				<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry mb-[50px]">
-					Two principles we stand behind in
-					<br className="sm:hidden xm:hidden" /> every part of our work:
+					Core principles that drive our approach to
+					<br className="sm:hidden xm:hidden" /> marketing and branding excellence:
 				</h1>
 			</div>
 			<div className="w-full border-t border-[#21212155]">
@@ -20,10 +20,10 @@ export default function Principles() {
 						/>
 						<div className="flex flex-col gap-[20px]">
 							<p className="paragraph font-NeueMontreal text-secondry">
-								Whether the presentation needs to convince or <br />
-								educate it always has to change audience
-								<br /> perception. We seek insights to make decks
-								<br /> unexpectedly enlightening for our audience.
+								Every brand has a unique story that deserves to be<br />
+								told in a way that captivates and converts.
+								<br /> We combine data-driven insights with creative<br />
+								excellence to craft compelling brand narratives.
 							</p>
 						</div>
 					</div>
@@ -35,10 +35,10 @@ export default function Principles() {
 						/>
 						<div className="flex flex-col gap-[20px]">
 							<p className="paragraph font-NeueMontreal text-secondry">
-								The presentation helps to see what&apos;s hidden,
-								<br /> unseen, or simply never known before. We use <br />
-								design to drive their attention, focus them to <br />
-								clearly see, and help them feel the message.
+								Great marketing reveals the extraordinary in the<br />
+								ordinary. We transform complex ideas into clear,<br />
+								impactful messages that resonate with your audience<br />
+								and drive meaningful engagement.
 							</p>
 						</div>
 					</div>

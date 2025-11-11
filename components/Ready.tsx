@@ -18,36 +18,36 @@ export default function Ready() {
 
 	return (
 		<section
-			className="w-full relative z-30 min-h-screen sm:h-screen xm:h-screen bg-about padding-y rounded-t-[20px] mt-[-20px]"
+			className="w-full relative z-30 min-h-screen sm:h-screen xm:h-screen bg-[#0D1B2A] padding-y rounded-t-[20px] mt-[-20px]"
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex flex-col gap-[10px]">
-					<h1 className="text-[290px] leading-[230px] lg:text-[220px] lg:leading-[170px] md:text-[180px] md:leading-[140px] sm:text-[120px] sm:leading-[90px] xm:text-[80px] xm:leading-[60px] tracking-[-2.5px] text-center font-bold font-FoundersGrotesk text-secondry uppercase pointer-events-none">
+					<h1 className="text-[290px] leading-[230px] lg:text-[220px] lg:leading-[170px] md:text-[180px] md:leading-[140px] sm:text-[120px] sm:leading-[90px] xm:text-[80px] xm:leading-[60px] tracking-[-2.5px] text-center font-bold font-FoundersGrotesk text-[#facc15] uppercase pointer-events-none">
 						<TextMask>{phrase}</TextMask>
 					</h1>
 				</div>
 				<div className="flex flex-col  items-center gap-[10px]">
-					<div className="flex items-center justify-between bg-secondry cursor-pointer rounded-full group">
+					<div className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group">
 						<RoundButton
 							href="/contact"
 							title="start the project"
-							className="bg-white text-black"
-							bgcolor="#000"
-							style={{ color: "#fff" }}
+							className="bg-[#0D1B2A] text-[#facc15]"
+							bgcolor="rgba(250,204,21,0.5)"
+							style={{ color: "#facc15" }}
 						/>
 					</div>
-					<p className="text-[20px] font-NeueMontreal text-secondry">OR</p>
-					<div className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group border border-[#212121]">
+					<p className="text-[20px] font-NeueMontreal text-[#facc15]">OR</p>
+					<div className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group border border-[#facc15]">
 						<Link
 							className="xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal"
 							href="/contact">
 							<Rounded
 								className="py-[6px]"
-								backgroundColor="#212121">
-								<p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-black">
-									hello@ochi.design
+								backgroundColor="rgba(250,204,21,0.5)">
+								<p className="z-10 px-[10px] ml-[15px] py-[6px] text-[#facc15]">
+									hello@brandboosters.marketing
 								</p>
-								<div className="bg-black group-hover:bg-white text-black p-[10px] rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]">
+								<div className="bg-[#0D1B2A] text-[#facc15] p-[10px] rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]">
 									<ArrowUpRight
 										strokeWidth={1.5}
 										size={30}

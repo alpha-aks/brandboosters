@@ -9,27 +9,29 @@ export default function About() {
 					<div className="w-full flex justify-between padding-x sm:flex-col xm:flex-col gap-[30px]">
 						<div>
 							<h3 className="paragraph font-medium text-secondry font-NeueMontreal">
-								We are ochi design:
+								We are BrandBoosters:
 							</h3>
 						</div>
 						<div className="w-[48%] sm:w-full xm:w-full flex justify-between">
 							<div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-y-[40px]">
 								<div className="flex flex-col gap-y-[20px]">
 									<p className="paragraph font-NeueMontreal text-secondry">
-										The team of designers, storytellers, and
-										<br /> passionate collaborators, who work
-										<br /> together to create industry-shifting <br />
-										presentations that win people&apos;s hearts
+										A team of creative visionaries, strategists, and
+										<br /> marketing experts who collaborate to build
+										<br /> powerful brand identities and digital <br />
+										experiences that connect with audiences
 										<br />
-										and minds.
+										and drive real results.
 									</p>
 								</div>
 								<div className="flex flex-col gap-y-[20px]">
 									<p className="paragraph font-NeueMontreal text-secondry">
-										And we strive to become one of the most
+										We're on a mission to become the most
 										<br />
-										recognizable & influential presentation
-										<br /> agencies of the time who does that.
+										trusted and results-driven marketing
+										<br /> partner for businesses looking to make
+										<br />
+										a lasting impact.
 									</p>
 								</div>
 							</div>

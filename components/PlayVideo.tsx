@@ -1,27 +1,20 @@
 "use client";
+import { useRef, useState, useEffect } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { eyes } from "@/public";
-import { useEffect, useRef, useState } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function PlayVideo({ videosrc }: { videosrc: string }) {
+	const container = useRef(null);
 	const [rotate, setRotate] = useState(0);
-	const [isPlaying, setIsPlaying] = useState(false);
-	const videoRef = useRef<HTMLVideoElement>(null);
 
-	const togglePlay = () => {
-		if (videoRef.current) {
-			if (isPlaying) {
-				videoRef.current.pause();
-			} else {
-				videoRef.current.play();
-			}
-			setIsPlaying(!isPlaying);
-		}
-	};
+	const { scrollYProgress } = useScroll({
+		target: container,
+		offset: ["start end", "end start"],
+	});
 
 	useEffect(() => {
-		window.addEventListener("mousemove", (e) => {
+		const handleMouseMove = (e: MouseEvent) => {
 			let mouseX = e.clientX;
 			let mouseY = e.clientY;
 
@@ -30,82 +23,52 @@ export default function PlayVideo({ videosrc }: { videosrc: string }) {
 
 			var angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
 			setRotate(angle - 180);
-		});
-	}, []);
-	const container = useRef(null);
+		};
 
-	const { scrollYProgress } = useScroll({
-		target: container,
-		offset: ["start end", "end start"],
-	});
+		window.addEventListener("mousemove", handleMouseMove);
+		return () => window.removeEventListener("mousemove", handleMouseMove);
+	}, []);
 
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -400]);
+	
 	return (
-		<div
-			className="w-full relative overflow-hidden cursor-pointer"
+		<div 
+			className="w-full relative overflow-hidden"
 			ref={container}
-			onClick={togglePlay}>
-			<div
-				className="w-full h-full"
+		>
+			{/* Background: Solid Yellow */}
+			<div className="w-full h-[80vh] bg-yellow-400" />
+
+			{/* Eyes Overlay */}
+			<motion.div 
+				className="w-full h-[80vh] flex items-center justify-center gap-20 absolute inset-0"
 				data-scroll
 				data-scroll-speed="-.8"
-				data-scroll-section>
-				<video
-					className="w-full h-full"
-					loop
-					ref={videoRef}
-					src={videosrc}
-				/>
-				<motion.div
-					className={`w-full absolute top-[50%] transform translate-y-[-50%] gap-[30px] flex items-center justify-center ${
-						isPlaying && "hidden"
-					}`}
-					style={{ y: mq }}>
-					<div
-						className="w-[200px] h-[200px] sm:w-[150px] sm:h-[150px] xm:w-[100px] xm:h-[100px] bg-white rounded-full flex items-center justify-center cursor-pointer"
-						onClick={togglePlay}>
-						<div className="relative w-full h-full">
-							<Image
-								style={{
-									transform: `rotate(${rotate}deg)`,
-								}}
-								src={eyes}
-								alt="img"
-								className="w-full h-full object-cover"
-							/>
-							<p className="absolute top-1/2 left-1/2 paragraph uppercase text-white font-NeueMontreal font-medium transform translate-x-[-50%] translate-y-[-50%]">
-								{isPlaying ? "Pause" : "Play"}
-							</p>
-						</div>
-					</div>
-					<div
-						className="w-[200px] sm:w-[150px] sm:h-[150px] xm:w-[100px] xm:h-[100px] bg-white rounded-full flex items-center justify-center cursor-pointer"
-						onClick={togglePlay}>
-						<div className="relative w-full h-full">
-							<Image
-								style={{
-									transform: `rotate(${rotate}deg)`,
-								}}
-								src={eyes}
-								alt="img"
-								className="w-full h-full object-cover"
-							/>
-							<p className="absolute top-1/2 left-1/2 paragraph uppercase text-white font-NeueMontreal font-medium transform translate-x-[-50%] translate-y-[-50%]">
-								{isPlaying ? "Pause" : "Play"}
-							</p>
-						</div>
-					</div>
-				</motion.div>
-				<div
-					onClick={togglePlay}
-					className={`w-full absolute top-[50%] transform translate-y-[-50%] gap-[30px] flex items-center justify-center ${
-						!isPlaying && "hidden"
-					}`}>
-					<button className="text-white text-[18px] bg-black px-[10px]  leading-none font-normal py-[5px] font-NeueMontreal rounded-[20px]">
-						pause
-					</button>
+				data-scroll-section
+				style={{ y: mq }}
+			>
+				{/* First Eye */}
+				<div className="w-[200px] h-[200px] sm:w-[150px] sm:h-[150px] xm:w-[100px] xm:h-[100px] relative">
+					<Image
+						src={eyes}
+						alt="Eyes"
+						fill
+						className="object-contain"
+						style={{ rotate: `${rotate}deg` }}
+					/>
 				</div>
-			</div>
+				
+				{/* Second Eye */}
+				<div className="w-[200px] h-[200px] sm:w-[150px] sm:h-[150px] xm:w-[100px] xm:h-[100px] relative">
+					<Image
+						src={eyes}
+						alt="Eyes"
+						fill
+						className="object-contain"
+						style={{ rotate: `${rotate}deg` }}
+					/>
+				</div>
+			</motion.div>
 		</div>
 	);
 }

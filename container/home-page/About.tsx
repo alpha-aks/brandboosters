@@ -13,18 +13,18 @@ export default function About() {
 		<section className="w-full bg-about padding-y rounded-t-[20px] z-20 relative mt-[-15px]">
 			<div className="pl-[50px] sm:px-[20px] xm:px-[20px]">
 				<h2 className="sub-heading font-medium font-NeueMontreal text-secondry">
-					Ochi is a strategic partner for fast-grow­ing tech
-					<br className="sm:hidden xm:hidden" /> businesses that need to&nbsp;
+					BrandBoosters is a full-service marketing agency founded by Om, Prathull, Atharva, and Nishant.
+					<br className="sm:hidden xm:hidden" /> We help businesses&nbsp;
 					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
-						raise funds,
+						grow their brand,
 					</span>
-					&nbsp;sell prod­ucts, <br className="sm:hidden xm:hidden" />
+					&nbsp;engage audiences, <br className="sm:hidden xm:hidden" />
 					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
-						ex­plain com­plex ideas,
+						deliver compelling content,
 					</span>
 					&nbsp;and&nbsp;
 					<span className="sub-heading font-medium font-NeueMontreal link-flash cursor-pointer">
-						hire great peo­ple.
+						achieve digital success.
 					</span>
 				</h2>
 			</div>
@@ -39,14 +39,15 @@ export default function About() {
 						<div className="w-full flex gap-[30px] h-full items-end sm:items-start sm:flex-col xm:items-start xm:flex-col">
 							<div className="w-[40%] sm:w-[60%] xm:w-[60%]">
 								<p className="sub-paragraph font-medium font-NeueMontreal text-secondry tracking-wide">
-									We create tailored presentations to help you persuade your
-									colleagues, clients, or investors. Whether it’s live or
-									digital, delivered for one or a hundred people.
+									We create impactful digital experiences that drive real business results. 
+									From brand strategy and web development to video production and 
+									social media management, our comprehensive services are designed to 
+									elevate your brand in the digital landscape.
 								</p>
 								<p className="sub-paragraph font-medium font-NeueMontreal text-secondry pt-[30px] tracking-wide">
-									We believe the mix of strategy and design (with a bit of
-									coffee) is what makes your message clear, convincing, and
-									captivating.
+									Our team of passionate marketers, designers, and developers work 
+									closely with clients to understand their unique needs and deliver 
+									solutions that not only look great but also drive measurable success.
 								</p>
 							</div>
 							<div className="w-[60%] flex justify-end flex-col  sm:w-full xm:w-full">
@@ -76,8 +77,8 @@ export default function About() {
 						onMouseEnter={() => setHovered(true)}
 						onMouseLeave={() => setHovered(false)}>
 						<RoundButton
-							href="/ochi-team"
-							title="read more"
+							href="/about-us"
+							title="meet the team"
 							bgcolor="#000"
 							className="bg-white text-black"
 							style={{ color: "#fff" }}
@@ -87,14 +88,17 @@ export default function About() {
 				<div
 					className={`w-[50%] sm:w-full xm:w-full transition transform duration-[1.5s] ease-[.215,.61,.355,1] rounded-[15px] overflow-hidden ${
 						hovered && "scale-[0.96]"
-					}`}>
-					<Image
-						src={aboutImg}
-						alt="about-img"
-						className={`w-full h-full transition transform duration-[2s] ease-[.215,.61,.355,1] ${
-							hovered && "scale-[1.09]"
-						}`}
-					/>
+					}`}
+				>
+					<video
+						className="w-full h-full object-cover"
+						autoPlay
+						loop
+						muted
+						playsInline
+					>
+						<source src="https://alphas.cdn.prismic.io/alphas/aRNcnbpReVYa4WNl_Loop1-1-.mp4" type="video/mp4" />
+					</video>
 				</div>
 			</div>
 		</section>

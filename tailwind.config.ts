@@ -13,8 +13,8 @@ const config: Config = {
       colors: {
         background: "#f1f1f1",
         secondry: "#212121",
-        marquee: "#004d43",
-        about: "#cdea68"
+        marquee: "#0D1B2A",
+        about: "#facc15"
       },
     },
     fontFamily: {

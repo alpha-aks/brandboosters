@@ -35,7 +35,7 @@ export const footerItems = [
    {
       id: 1,
       title: "Instagram",
-      href: "https://www.instagram.com/",
+      href: "https://www.instagram.com/brandboosters__agency/",
    },
    {
       id: 2,
@@ -49,8 +49,8 @@ export const footerItems = [
    },
    {
       id: 4,
-      title: "Linkedin",
-      href: "https://www.linkedin.com/",
+      title: "LinkedIn",
+      href: "https://www.linkedin.com/company/brandboosters-marketing/posts/?feedView=all",
    },
 ];
 
@@ -90,62 +90,47 @@ export const footernavbarItems = [
 export const clientsItem = [
    {
       id: 1,
-      website: "Karman Ventures",
-      href: "https://www.ochi.design",
+      website: "TechGrowth Ventures",
+      href: "#",
       title: "Services:",
-      name: "William Barnes",
+      name: "Rahul Sharma",
       src: client01,
-      review: "They were transparent about the time and the stages of the project. The end product is high quality, and I feel confident about how they were handholding the client through the process. I feel like I can introduce them to someone who needs to put a sales deck together from scratch, and they would be able to handhold the client experience from 0 to 100 very effectively from story to design. 5/5",
+      review: "BrandBoosters transformed our digital presence with their exceptional video editing services. Their attention to detail and creative approach helped us create engaging content that significantly boosted our social media engagement. The monthly retainer plan they offered was cost-effective and provided consistent quality. 5/5",
       links: [
          {
             id: 1,
-            title: "investor deck",
+            title: "video editing",
             href: "/services",
          },
          {
             id: 2,
-            title: "sales deck",
+            title: "social media",
             href: "/services",
          },
       ]
    },
    {
       id: 2,
-      website: "Planetly",
-      href: "https://www.planetly.com",
+      website: "Digital Horizon",
+      href: "#",
       title: "Services:",
-      name: "Nina Walloch",
+      name: "Priya Patel",
       src: client02,
-      review: "Ihor and his team tackled the projects with great professionalism and creativity. They understood our brand value and turned this into excellent slide designs. The process was seamless and very effective, so we decided to roll this out across all our presentation decks. Furthermore, their understanding, professionalism, and creativity have secured a continued partnership.",
+      review: "The web development team at BrandBoosters delivered beyond our expectations. They created a responsive, user-friendly website that perfectly captures our brand's essence. Their monthly maintenance plan has been invaluable in keeping our site updated and secure. Highly recommend their services to any business looking to establish a strong online presence.",
       links: [
          {
             id: 1,
-            title: "agency",
+            title: "web development",
             href: "/services",
          },
          {
             id: 2,
-            title: "big news deck",
+            title: "website maintenance",
             href: "/services",
          },
          {
             id: 3,
-            title: "branded template",
-            href: "/services",
-         },
-         {
-            id: 4,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 5,
-            title: "product presentation",
-            href: "/services",
-         },
-         {
-            id: 6,
-            title: "sales deck",
+            title: "UI/UX design",
             href: "/services",
          },
          {
@@ -330,6 +315,153 @@ export const clientsItem = [
             title: "startup pitch",
             href: "/services",
          },
+      ]
+   },
+   {
+      id: 10,
+      website: "EduTech Solutions",
+      href: "#",
+      title: "Services:",
+      name: "Amit Joshi",
+      src: client03,
+      review: "The video editing team at BrandBoosters has been instrumental in creating engaging educational content for our platform. Their ability to transform raw footage into polished, professional videos has significantly enhanced our course completion rates. Their monthly content package is a game-changer for our marketing strategy.",
+      links: [
+         {
+            id: 1,
+            title: "video production",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "content strategy",
+            href: "/services",
+         }
+      ]
+   },
+   {
+      id: 11,
+      website: "Global Retail Corp",
+      href: "#",
+      title: "Services:",
+      name: "Meera Desai",
+      src: client04,
+      review: "BrandBoosters' e-commerce web development services helped us revamp our online store. The new platform is not only visually stunning but also highly functional, resulting in a 40% increase in conversion rates. Their ongoing maintenance plan ensures our site stays updated and secure.",
+      links: [
+         {
+            id: 1,
+            title: "e-commerce development",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "website optimization",
+            href: "/services",
+         }
+      ]
+   },
+   {
+      id: 12,
+      website: "HealthPlus Clinic",
+      href: "#",
+      title: "Services:",
+      name: "Dr. Arjun Kapoor",
+      src: client05,
+      review: "The explainer videos created by BrandBoosters have been incredibly effective in helping our patients understand complex medical procedures. The team's ability to simplify medical jargon into engaging content is remarkable. Their monthly video package has become an essential part of our patient education program.",
+      links: [
+         {
+            id: 1,
+            title: "explainer videos",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "medical animation",
+            href: "/services",
+         }
+      ]
+   },
+   {
+      id: 13,
+      website: "Foodie Express",
+      href: "#",
+      title: "Services:",
+      name: "Riya Malhotra",
+      src: client06,
+      review: "Our food delivery app development project with BrandBoosters exceeded all expectations. They delivered a seamless, user-friendly platform that has significantly improved our order processing. Their monthly maintenance package ensures our app runs smoothly with regular updates and bug fixes.",
+      links: [
+         {
+            id: 1,
+            title: "app development",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "UI/UX design",
+            href: "/services",
+         }
+      ]
+   },
+   {
+      id: 14,
+      website: "Fitness First",
+      href: "#",
+      title: "Services:",
+      name: "Vikram Singh",
+      src: client07,
+      review: "BrandBoosters' video marketing strategy has transformed our online fitness classes. Their high-energy editing style perfectly captures the essence of our brand, and their monthly content calendar keeps our social media channels consistently engaging. The increase in member sign-ups has been phenomenal!",
+      links: [
+         {
+            id: 1,
+            title: "video marketing",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "social media",
+            href: "/services",
+         }
+      ]
+   },
+   {
+      id: 15,
+      website: "EcoLiving",
+      href: "#",
+      title: "Services:",
+      name: "Neha Gupta",
+      src: client08,
+      review: "The web development team at BrandBoosters created an amazing e-commerce platform for our sustainable products. Their attention to detail and understanding of our brand values was impressive. The monthly SEO and maintenance package has been crucial in driving organic traffic to our site.",
+      links: [
+         {
+            id: 1,
+            title: "e-commerce development",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "SEO services",
+            href: "/services",
+         }
+      ]
+   },
+   {
+      id: 16,
+      website: "TechStart Inc.",
+      href: "#",
+      title: "Services:",
+      name: "Rahul Verma",
+      src: client09,
+      review: "BrandBoosters' monthly video content package has been a game-changer for our startup. Their ability to create professional product demos and explainer videos has helped us effectively communicate our complex tech solutions to potential clients. The consistent quality and timely delivery have made them an invaluable partner in our growth journey.",
+      links: [
+         {
+            id: 1,
+            title: "product demos",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "monthly content",
+            href: "/services",
+         }
       ]
    },
 
@@ -1202,20 +1334,20 @@ export const aboutPartberItems = [
    {
       id: 1,
       src: planetly,
-      title: "Planetly",
-      para: "Ihor and his team tackled the projects with great professionalism and creativity. They understood our brand value and turned this into excellent slide designs. The process was seamless and very effective, so we decided to roll this out across all our presentation decks. Furthermore, their understanding, professionalism, and creativity have secured a continued partnership."
+      title: "TechGrowth Ventures",
+      para: "BrandBoosters transformed our digital presence with their innovative marketing strategies. Their team's understanding of brand development and digital marketing is exceptional. The campaign they created for us exceeded our expectations and delivered measurable results. Their professionalism and creative approach have made them our go-to marketing partner."
    },
    {
       id: 2,
       src: officevibe,
-      title: "Officevibe",
-      para: "Ochi has an impressive understanding of what's needed to do an effective presentation. The stakeholders at work said it's the best most complete PP template they've ever seen. Ochi delivered more than I was expecting and we were really surprised with the quality of his work. Will work with Ochi design again for sure!"
+      title: "HealthPlus Clinic",
+      para: "Working with BrandBoosters has been a game-changer for our clinic's online visibility. Their comprehensive marketing strategy and attention to detail in campaign execution have significantly increased our patient engagement. The team is highly responsive, creative, and truly understands the healthcare industry's unique marketing needs."
    },
    {
       id: 3,
       src: nestle,
-      title: "Nestle",
-      para: "This is just a great experience for us! As an established company, you operate within different industries and expect immediate input with a certain level of service. Ihor and the team delivered exactly that. Fantastic result, quick delivery time, and highly responsive. This team is a hidden gem. We've already started to outline our next projects for them."
+      title: "EcoLife Foods",
+      para: "BrandBoosters' expertise in sustainable brand development perfectly aligned with our mission. They helped us craft a compelling brand story that resonates with our eco-conscious audience. Their data-driven approach to marketing has significantly improved our customer engagement and conversion rates. We're thrilled with the results and look forward to our continued partnership."
    },
    // {
    //    id: 4,
