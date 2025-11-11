@@ -1,6 +1,13 @@
 {
-	"name": "ochi-website-clone",
-	"version": "0.1.0",
+	"name": "brandboosters-website",
+	"version": "1.0.0",
+	"description": "BrandBoosters - Full-service marketing agency website",
+	"author": "BrandBoosters Team <hello@brandboosters.marketing>",
+	"homepage": "https://brandboosters.marketing",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alpha-aks/brandboosters.git"
+	},
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
