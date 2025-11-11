@@ -53,7 +53,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           'Content-Type': 'application/json',
           'Authorization': `Bot ${botToken}`,
         },
-        body: JSON.stringify({ embeds: [embed] }),
+        body: JSON.stringify({
+          content: `New contact: ${name} <${email}>${company ? ` from ${company}` : ''}`,
+          embeds: [embed],
+        }),
       });
 
       if (!resp.ok) {
@@ -69,7 +72,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const resp = await fetch(webhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ embeds: [embed] }),
+        body: JSON.stringify({
+          content: `New contact: ${name} <${email}>${company ? ` from ${company}` : ''}`,
+          embeds: [embed],
+        }),
       });
 
       if (!resp.ok) {
