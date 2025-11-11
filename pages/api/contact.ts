@@ -41,10 +41,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const channelId = process.env.DISCORD_CHANNEL_ID;
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
 
+  let via: 'bot' | 'webhook' | 'none' = 'none';
   try {
     if (botToken && channelId) {
       // Prefer bot token flow when configured
       const apiUrl = `https://discord.com/api/v10/channels/${channelId}/messages`;
+      via = 'bot';
       const resp = await fetch(apiUrl, {
         method: 'POST',
         headers: {
@@ -63,6 +65,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     if (webhookUrl) {
       // Fallback to webhook URL if provided
+      via = 'webhook';
       const resp = await fetch(webhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -77,9 +80,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     // Neither configured
-    return res.status(500).json({ error: 'Server configuration error: missing DISCORD_BOT_TOKEN + DISCORD_CHANNEL_ID or DISCORD_WEBHOOK_URL' });
+    return res.status(500).json({ error: 'Server configuration error: missing DISCORD_BOT_TOKEN + DISCORD_CHANNEL_ID or DISCORD_WEBHOOK_URL', via: 'none' });
   } catch (error) {
-    console.error('Error sending message to Discord:', error);
-    return res.status(500).json({ error: 'Failed to send message' });
+    const msg = error instanceof Error ? error.message : 'Unknown error';
+    console.error('Error sending message to Discord:', msg);
+    return res.status(500).json({ error: 'Failed to send message', detail: msg, via });
   }
 }
