@@ -468,90 +468,52 @@ export const clientsItem = [
 ];
 
 export const projectItem = [
-   {
-      id: 1,
-      title: "fyde",
-      href: "/case/",
-      src: project1,
-      links: [
-         {
-            id: 1,
-            title: "audit",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "copywriting",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "sales deck",
-            href: "/services",
-         },
-         {
-            id: 4,
-            title: "slides design",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 2,
-      title: "vise",
-      href: "/case/",
-      src: project2,
-      links: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "compony presentation",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 3,
-      title: "trawa",
-      href: "/case/",
-      src: project3,
-      links: [
-         {
-            id: 1,
-            title: "brand identity",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "design research",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "investor deck",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 4,
-      title: "premiumblend",
-      href: "/case/",
-      src: project4,
-      links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
-      ]
-   },
+  {
+     id: 1,
+     title: "Digital Marketing",
+     href: "/services",
+     src: project1,
+     links: [
+        { id: 1, title: "SEO", href: "/services" },
+        { id: 2, title: "Social Media", href: "/services" },
+        { id: 3, title: "Paid Ads", href: "/services" },
+        { id: 4, title: "Content Strategy", href: "/services" },
+     ]
+  },
+  {
+     id: 2,
+     title: "Web Development",
+     href: "/services",
+     src: project2,
+     links: [
+        { id: 1, title: "Next.js", href: "/services" },
+        { id: 2, title: "E-commerce", href: "/services" },
+        { id: 3, title: "Maintenance", href: "/services" },
+     ]
+  },
+  {
+     id: 3,
+     title: "Video Editing",
+     href: "/services",
+     src: project3,
+     links: [
+        { id: 1, title: "Short-form", href: "/services" },
+        { id: 2, title: "Explainers", href: "/services" },
+        { id: 3, title: "YouTube", href: "/services" },
+     ]
+  },
+  {
+     id: 4,
+     title: "Graphic Designing",
+     href: "/services",
+     src: project4,
+     links: [
+        { id: 1, title: "Brand Identity", href: "/services" },
+        { id: 2, title: "Social Creatives", href: "/services" },
+        { id: 3, title: "Pitch Decks", href: "/services" },
+     ]
+  },
 ];
-
 
 // services page
 
