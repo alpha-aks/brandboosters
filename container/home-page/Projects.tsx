@@ -39,8 +39,8 @@ export default function Projects() {
 			<div className="w-full flex justify-center">
 				<div className="flex items-center justify-between bg-secondry cursor-pointer rounded-full group">
 					<RoundButton
-						href="/services"
-						title="view all services"
+						href="/presentation"
+						title="view services"
 						bgcolor="#000"
 						className="bg-white text-black"
 						style={{ color: "#fff" }}
