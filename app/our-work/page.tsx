@@ -47,7 +47,7 @@ export default function OurWorkPage() {
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Work</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our portfolio of successful projects and see how we've helped businesses grow.
+            Explore our portfolio of successful projects and see how we&apos;ve helped businesses grow.
           </p>
         </motion.div>
 

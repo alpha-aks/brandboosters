@@ -11,10 +11,11 @@ export default function Ratings() {
 		<div className="w-full flex justify-between sm:flex-col xm:flex-col gap-[20px]">
 			<div className="w-[49.5%] sm:w-full xm:w-full justify-between h-[60vh] sm:h-[50vh] xm:h-[50vh] gap-[10px]">
 				<div className="w-full h-full flex items-center justify-center rounded-[10px] bg-marquee relative">
-					<img
+					<Image
 						src="https://images.prismic.io/alphas/aRNlSbpReVYa4WUx_Gemini_Generated_Image_a0x2pta0x2pta0x2.png?auto=format,compress"
 						alt="brandImg"
-						className="w-full h-full object-cover"
+						fill
+						className="object-cover"
 					/>
 					<div className="absolute bottom-[35px] left-[25px] flex items-center justify-center border border-about px-[12px] py-[8px] cursor-pointer rounded-full">
 						<Link

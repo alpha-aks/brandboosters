@@ -245,7 +245,7 @@ export default function OnboardingProcess() {
               viewport={{ once: true }}
               className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
             >
-              Let's work together to bring your vision to life
+              Let&apos;s work together to bring your vision to life
             </motion.p>
             <motion.button
               initial={{ opacity: 0, y: 20 }}

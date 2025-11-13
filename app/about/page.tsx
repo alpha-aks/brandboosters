@@ -55,7 +55,7 @@ export default function AboutPage() {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're a team of passionate creators and strategists dedicated to helping businesses thrive in the digital world.
+              We&apos;re a team of passionate creators and strategists dedicated to helping businesses thrive in the digital world.
             </p>
           </motion.div>
         </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-300 mb-8"
           >
-            Get in touch with us today and let's create something amazing together.
+            Get in touch with us today and let&apos;s create something amazing together.
           </motion.p>
           <motion.a
             href="/contact"
