@@ -1,11 +1,7 @@
-import { Metadata } from "next";
+'use client';
+
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from "@/utils/motion";
-
-export const metadata: Metadata = {
-  title: "Our Work | BrandBoosters",
-  description: "Explore our portfolio of successful projects and case studies.",
-};
 
 const projects = [
   {
