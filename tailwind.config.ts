@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: "rgb(98, 197, 144)",
         background: "#f1f1f1",
         secondry: "#212121",
         marquee: "#0D1B2A",
