@@ -5,12 +5,12 @@ export const navbarItems = [
    {
       id: 1,
       title: "Services",
-      href: "/services",
+      href: "/presentation",
    },
    {
       id: 2,
       title: "Our work",
-      href: "/presentation",
+      href: "/services",
    },
    {
       id: 3,
@@ -63,12 +63,12 @@ export const footernavbarItems = [
    {
       id: 2,
       title: "Services",
-      href: "services",
+      href: "presentation",
    },
    {
       id: 3,
       title: "Our work",
-      href: "presentation",
+      href: "services",
    },
    {
       id: 4,
@@ -111,11 +111,11 @@ export const clientsItem = [
    },
    {
       id: 2,
-      website: "Digital Horizon",
+      website: "Lilac Cafe",
       href: "#",
       title: "Services:",
-      name: "Priya Patel",
-      src: client02,
+      name: "Lilac Cafe",
+      src: "https://images.prismic.io/alphas/aRQgO7pReVYa4XRz_lilac.png?auto=format,compress",
       review: "The web development team at BrandBoosters delivered beyond our expectations. They created a responsive, user-friendly website that perfectly captures our brand's essence. Their monthly maintenance plan has been invaluable in keeping our site updated and secure. Highly recommend their services to any business looking to establish a strong online presence.",
       links: [
          {
@@ -472,7 +472,7 @@ export const projectItem = [
      id: 1,
      title: "Digital Marketing",
      href: "/services",
-     src: project1,
+     src: "https://cdn.discordapp.com/attachments/1437492837225861312/1438417981997846619/ABS2GSlas-LKMKHdwhUMetjt39L_fvjWBbUG1_Y5eohf1-yFROhI-gBaJfp05JV1HJyvz8cLywxjwStDbb233yxVH3jhp5Py7LEU9PhPJWemTG02zICiR_vqF1McAwOO_lWH-NK-gZ6Qu8IK3ptQNkXysHn0Ms8bMpr73FWPFLHQolMzWOxdSAs1024-rj.png?ex=6916cea3&is=69157d23&hm=da2095cea0a9f594b81a8810c4109302c7f6ca220eca772df53f09310d417963",
      links: [
         { id: 1, title: "SEO", href: "/services" },
         { id: 2, title: "Social Media", href: "/services" },
@@ -484,7 +484,7 @@ export const projectItem = [
      id: 2,
      title: "Web Development",
      href: "/services",
-     src: project2,
+     src: "https://cdn.discordapp.com/attachments/1437492837225861312/1438036957451128902/image1.jpg?ex=6916bd48&is=69156bc8&hm=102edaa0cc8f3256db50fdead29a82c20b7d6b207b523d74a3891134397bd3ff",
      links: [
         { id: 1, title: "Next.js", href: "/services" },
         { id: 2, title: "E-commerce", href: "/services" },
@@ -495,7 +495,7 @@ export const projectItem = [
      id: 3,
      title: "Video Editing",
      href: "/services",
-     src: project3,
+     src: "https://cdn.discordapp.com/attachments/1437492837225861312/1438004327816888390/ABS2GSmsi9wQO9Swf-CUGU0wdtRhesalVs2iiD8e0YWp9iXkf5-4Ib027gGM3RgSUHPVmLtw3eUicSLNcLk_Tn-dvaJQ6dDlpaTZKirlw4je-j6V7Yu6447VTmDqfWE44nS4FKSE7vGAckwKZTLXH5QhmSvEIuTARkox8RUjPE5bO5wf_3IHigs1024-rj.png?ex=69169ee4&is=69154d64&hm=2f4697270ddd7f9f7913218d5fe6704024002d9e9305532eed41d8ef53fc17c9",
      links: [
         { id: 1, title: "Short-form", href: "/services" },
         { id: 2, title: "Explainers", href: "/services" },
@@ -506,7 +506,7 @@ export const projectItem = [
      id: 4,
      title: "Graphic Designing",
      href: "/services",
-     src: project4,
+     src: "https://media.discordapp.net/attachments/1437492837225861312/1438415593865744384/AIJ2gl-aZuyR1zsk2SQQ8UO_SnLjHLmJ9KSJWqiA7j-86Yz_FTl6Vs719kml6oE_vsLlNXkhQiuWRvUnTy2dVeObUKfEEhLhSKz3mLxbLHL33hLzjIPHsejbavRwrpHcyr2J7JAycNGGpj1FpGfc-S5Aycxy7IbkHbiOKLPK2gPLqvx4YUUyLCT2yCWWs-aeRtlKdrjOoB5jgXO8FWrUqe8eB77n7ulaE1XJ9ApRaWECa6lqq2LNafZwWBvk8w0hdUuvGnxKpIeO5ys67rsdIkoZ4UqUDtDQhxXRygGBEqElz1lvmVVebCFsrRuQkDx-aqY7bVDN-XxTu8Sveq44X2sqIQsXs1024-rj.png?ex=6916cc6a&is=69157aea&hm=67461e276080c4e5b3e5cefc41d46066d6abdc56cf3bbf588c2fa3061ac8dadc&=&format=webp&quality=lossless&width=1702&height=1702",
      links: [
         { id: 1, title: "Brand Identity", href: "/services" },
         { id: 2, title: "Social Creatives", href: "/services" },
@@ -958,138 +958,170 @@ export const achiveItems = [
 ];
 
 
-// presentation page
 
 export const presentationProjectItem = [
    {
       id: 1,
-      title: "fyde",
-      src: project1,
-      href: "/case/",
+      title: "Digital Marketing",
+      src: "https://media.discordapp.net/attachments/1437492837225861312/1438417981997846619/ABS2GSlas-LKMKHdwhUMetjt39L_fvjWBbUG1_Y5eohf1-yFROhI-gBaJfp05JV1HJyvz8cLywxjwStDbb233yxVH3jhp5Py7LEU9PhPJWemTG02zICiR_vqF1McAwOO_lWH-NK-gZ6Qu8IK3ptQNkXysHn0Ms8bMpr73FWPFLHQolMzWOxdSAs1024-rj.png?ex=6916cea3&is=69157d23&hm=da2095cea0a9f594b81a8810c4109302c7f6ca220eca772df53f09310d417963&=&format=webp&quality=lossless&width=1702&height=1702",
+      href: "/services/digital-marketing",
       links: [
          {
             id: 1,
-            title: "audit",
-            href: "/services",
+            title: "SEO",
+            href: "/services/seo",
          },
          {
             id: 2,
-            title: "copywriting",
-            href: "services",
+            title: "Social Media",
+            href: "/services/social-media",
          },
          {
             id: 3,
-            title: "sales deck",
-            href: "services",
+            title: "PPC",
+            href: "/services/ppc",
          },
          {
             id: 4,
-            title: "slides design",
-            href: "services",
+            title: "Content Strategy",
+            href: "/services/content-strategy",
          },
       ]
    },
    {
       id: 2,
-      title: "trawa",
-      src: project3,
-      href: "/case/",
+      title: "Video Editing",
+      src: "https://media.discordapp.net/attachments/1437492837225861312/1438004327816888390/ABS2GSmsi9wQO9Swf-CUGU0wdtRhesalVs2iiD8e0YWp9iXkf5-4Ib027gGM3RgSUHPVmLtw3eUicSLNcLk_Tn-dvaJQ6dDlpaTZKirlw4je-j6V7Yu6447VTmDqfWE44nS4FKSE7vGAckwKZTLXH5QhmSvEIuTARkox8RUjPE5bO5wf_3IHigs1024-rj.png?ex=69169ee4&is=69154d64&hm=2f4697270ddd7f9f7913218d5fe6704024002d9e9305532eed41d8ef53fc17c9",
+      href: "/services/video-editing",
       links: [
          {
             id: 1,
-            title: "brand identity",
-            href: "/services",
+            title: "YouTube Videos",
+            href: "/services/video-editing/youtube",
          },
          {
             id: 2,
-            title: "design research",
-            href: "services",
+            title: "Social Media Clips",
+            href: "/services/video-editing/social-media",
          },
          {
             id: 3,
-            title: "investor deck",
-            href: "services",
+            title: "Explainer Videos",
+            href: "/services/video-editing/explainers",
          },
       ]
    },
    {
       id: 3,
-      title: "premium blend",
-      src: project4,
-      href: "/case/",
+      title: "Graphic Designing",
+      src: "https://media.discordapp.net/attachments/1437492837225861312/1438415593865744384/AIJ2gl-aZuyR1zsk2SQQ8UO_SnLjHLmJ9KSJWqiA7j-86Yz_FTl6Vs719kml6oE_vsLlNXkhQiuWRvUnTy2dVeObUKfEEhLhSKz3mLxbLHL33hLzjIPHsejbavRwrpHcyr2J7JAycNGGpj1FpGfc-S5Aycxy7IbkHbiOKLPK2gPLqvx4YUUyLCT2yCWWs-aeRtlKdrjOoB5jgXO8FWrUqe8eB77n7ulaE1XJ9ApRaWECa6lqq2LNafZwWBvk8w0hdUuvGnxKpIeO5ys67rsdIkoZ4UqUDtDQhxXRygGBEqElz1lvmVVebCFsrRuQkDx-aqY7bVDN-XxTu8Sveq44X2sqIQsXs1024-rj.png?ex=6916cc6a&is=69157aea&hm=67461e276080c4e5b3e5cefc41d46066d6abdc56cf3bbf588c2fa3061ac8dadc&=&format=webp&quality=lossless&width=1702&height=1702",
+      href: "/services/graphic-design",
       links: [
          {
             id: 1,
-            title: "brand template",
-            href: "/services",
+            title: "Logo Design",
+            href: "/services/graphic-design/logo",
+         },
+         {
+            id: 2,
+            title: "Social Media Posts",
+            href: "/services/graphic-design/social-media",
+         },
+         {
+            id: 3,
+            title: "Marketing Materials",
+            href: "/services/graphic-design/marketing",
          },
       ]
    },
    {
       id: 4,
-      title: "planetly",
-      src: project5,
-      href: "/case/",
+      title: "Web Development",
+      src: "https://cdn.discordapp.com/attachments/1437492837225861312/1438036957451128902/image1.jpg?ex=6916bd48&is=69156bc8&hm=102edaa0cc8f3256db50fdead29a82c20b7d6b207b523d74a3891134397bd3ff",
+      href: "/services/web-development",
       links: [
          {
             id: 1,
-            title: "brand template",
-            href: "/services",
+            title: "E-commerce",
+            href: "/services/web-development/ecommerce",
          },
          {
             id: 2,
-            title: "big news deck",
-            href: "/services",
+            title: "Business Websites",
+            href: "/services/web-development/business",
          },
          {
             id: 3,
-            title: "branded template",
-            href: "/services",
+            title: "Web Apps",
+            href: "/services/web-development/apps",
          },
          {
             id: 4,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 5,
-            title: "policy deck & playbook",
-            href: "/services",
-         },
-         {
-            id: 6,
-            title: "sales deck",
-            href: "/services",
+            title: "Maintenance",
+            href: "/services/web-development/maintenance",
          },
       ]
    },
    {
       id: 5,
-      title: "black box",
-      src: project8,
-      href: "/case/",
+      title: "Content Creation",
+      src: "https://media.discordapp.net/attachments/1437492837225861312/1438417014715846657/ABS2GSmqQ7L8p2Lca6XI64rS5LCd0kxt74QeqWTWJaJ23s0rJ6besm7iDdoFxS940QdicS3uNMjoa-qKdi2sgh4gUvNyR-7cvtKSCrkJOMDRvXBYRKeVHXjlyF67OZVQu2uYSGrrR39mp-MMlihxzvJr1aF0URMMJt1TYCuNy-JGbfyNUldQBws1024-rj.png?ex=6916cdbc&is=69157c3c&hm=7b5a24a25e2dea712e5c0d640affa909bd99743b2b264dec41c0c6891dc0980d&=&format=webp&quality=lossless&width=1702&height=1702",
+      href: "/services/content-creation",
       links: [
          {
             id: 1,
-            title: "investor deck",
-            href: "/services",
+            title: "Blog Writing",
+            href: "/services/content-creation/blogs",
          },
          {
             id: 2,
-            title: "redesign",
-            href: "/services",
+            title: "Social Media Content",
+            href: "/services/content-creation/social-media",
          },
          {
             id: 3,
-            title: "review",
-            href: "/services",
+            title: "Website Copy",
+            href: "/services/content-creation/website",
+         },
+         {
+            id: 4,
+            title: "SEO Content",
+            href: "/services/content-creation/seo",
          },
       ]
    },
    {
       id: 6,
-      title: "vise",
-      src: project2,
+      title: "Channel Marketing",
+      src: "https://media.discordapp.net/attachments/1433390260397805691/1438441443810217994/AIJ2gl_NVFGfS0dcOkk-wlLhoyHLjbgJz_Fu2isBnlTp6oo5pYr0KfSLIa51DidvCiOOH2dsiYjhNk_15xN5SMdkenPWnuVL01NqSgVtJUcTBTtHzsjrrcC0PoM6P_kla8gG_vprJyaGiRqq9bWb5Ui6M5I1F-Zo-VIl0wBFSjMNA89fyo0hv2Yd6dHbHQFfc54Q64oFZyKFswWhsM9o4zYGa-UJ7Yg8Ne6UK0TRtvdzZPQFIw-x4EQtAxQMjXCjv_5sERnlynEdxKlFypPu0B9dqmVbY_eqUgIS_BxxDP2AsGlfEGuhj5k-lNiz-mkedN517CZxMQ1fhPbLfBjWj1iq0_gs1024-rj.png?ex=6916e47d&is=691592fd&hm=4d03ca4952870a935e532e51ca3ccd11d9c5da6169822b89d76cc1939d7a9941&=&format=webp&quality=lossless&width=1702&height=1702",
+      href: "/services/channel-marketing",
+      links: [
+         {
+            id: 1,
+            title: "WhatsApp Marketing",
+            href: "/services/channel-marketing/whatsapp",
+         },
+         {
+            id: 2,
+            title: "SMS Campaigns",
+            href: "/services/channel-marketing/sms",
+         },
+         {
+            id: 3,
+            title: "Email Marketing",
+            href: "/services/channel-marketing/email",
+         },
+         {
+            id: 4,
+            title: "Social Media Presence",
+            href: "/services/channel-marketing/social-media",
+         },
+      ]
+   },
+   {
+      id: 7,
+      title: "Social Media Management",
+      src: "https://cdn.discordapp.com/attachments/1437492837225861312/1438440538310443049/ABS2GSkbo9YRJXIRalZ44TX2iOlWyZQFjI7COETWOYPUJkikC8ke1fi90IPb975TrQof9FkYAjad-f1SSJxZASQAqg_EXnmX_qcr2Fk33NmtBILEZrho9jf67HGbV1WN43YUP-GPTrOpfRJtDEkEUaFaJejRS3wa9XFrmEIboepamwbiwBddrws1024-rj.png?ex=6916e3a5&is=69159225&hm=7c884e037e3b9d0988ea0dae6d42d9f73d98c747551ff99dbb53c37038211972",
       href: "/case/",
       links: [
          {
@@ -1106,8 +1138,8 @@ export const presentationProjectItem = [
    },
    {
       id: 7,
-      title: "soft start",
-      src: project9,
+      title: "Data Analysis",
+      src: "https://media.discordapp.net/attachments/1437492837225861312/1438067549282500648/image0.jpg?ex=69163105&is=6914df85&hm=0ceb241acec31d40851d0a9f619569db9a43bc40f85902edc967d6a65c53eb2f&=&format=webp&width=1702&height=1702",
       href: "/case/",
       links: [
          {
@@ -1124,38 +1156,58 @@ export const presentationProjectItem = [
    },
    {
       id: 8,
-      title: "officevibe",
-      src: project7,
-      href: "/case/",
+      title: "E-commerce",
+      src: "https://cdn.discordapp.com/attachments/1433390260397805691/1438441383428886629/ABS2GSlZnuPSkjx2Yq7hVYPWL7_hbWhxKqZPzm-vqFioZF8Jk831waEiDPAIom5Mvk2dll4KXMe43mh6WDmArh6FhpksdJXgFAlvbPn6ugWo_nytpN61mDdtYtF-MzxEj66axXfP-vQS7eLtlOPnATNkSn-l5RT4rpj5FcBE4WCgFYcy3FkQs1024-rj.png?ex=6916e46e&is=691592ee&hm=a2166bd0bbcdd46db041402e8e948a321d32d38f067a021a0ad5bd645f1b958c",
+      href: "/services/ecommerce",
       links: [
          {
             id: 1,
-            title: "brand template",
-            href: "/services",
+            title: "Shopify Store Setup",
+            href: "/services/ecommerce/shopify",
          },
+         {
+            id: 2,
+            title: "WooCommerce Solutions",
+            href: "/services/ecommerce/woocommerce",
+         },
+         {
+            id: 3,
+            title: "Product Listings",
+            href: "/services/ecommerce/product-listings",
+         },
+         {
+            id: 4,
+            title: "Payment Integration",
+            href: "/services/ecommerce/payment-integration",
+         }
       ]
    },
    {
       id: 9,
-      title: "workiz easy",
-      src: project6,
-      href: "/case/",
+      title: "SEO",
+      src: "https://cdn.discordapp.com/attachments/1437492837225861312/1438417014715846657/ABS2GSmqQ7L8p2Lca6XI64rS5LCd0kxt74QeqWTWJaJ23s0rJ6besm7iDdoFxS940QdicS3uNMjoa-qKdi2sgh4gUvNyR-7cvtKSCrkJOMDRvXBYRKeVHXjlyF67OZVQu2uYSGrrR39mp-MMlihxzvJr1aF0URMMJt1TYCuNy-JGbfyNUldQBws1024-rj.png?ex=6916cdbc&is=69157c3c&hm=7b5a24a25e2dea712e5c0d640affa909bd99743b2b264dec41c0c6891dc0980d&=&format=webp&quality=lossless&width=1702&height=1702",
+      href: "/services/seo",
       links: [
          {
             id: 1,
-            title: "onboarding presentation",
-            href: "/services",
+            title: "Keyword Research",
+            href: "/services/seo/keyword-research",
          },
          {
             id: 2,
-            title: "policy deck & playbook",
-            href: "/services",
+            title: "On-Page SEO",
+            href: "/services/seo/onpage",
          },
          {
             id: 3,
-            title: "sales deck",
-            href: "/services",
+            title: "Technical SEO",
+            href: "/services/seo/technical",
          },
+         {
+            id: 4,
+            title: "Local SEO",
+            href: "/services/seo/local",
+         }
       ]
    },
 ];

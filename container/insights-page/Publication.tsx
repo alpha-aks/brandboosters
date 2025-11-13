@@ -15,7 +15,7 @@ export default function Publication() {
 				<div className="w-full flex justify-between gap-[20px] flex-wrap sm:flex-col xm:flex-col">
 					<div>
 						<h3 className="paragraph font-medium text-white font-NeueMontreal">
-							Latest publication
+							Latest Blogs
 						</h3>
 					</div>
 					<div className="w-[70%] flex gap-y-[20px] sm:flex-col xm:flex-col sm:w-full xm:w-full gap-[10px]">

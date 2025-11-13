@@ -14,11 +14,14 @@ export default function ProjectCard({ item }: { item: any }) {
 					className="rounded-[10px] overflow-hidden hover:scale-[0.95] transition cursor-pointer transform duration-[1s] ease-[.4,0,.2,1] block"
 					onMouseEnter={() => setHovered(true)}
 					onMouseLeave={() => setHovered(false)}>
-					<Image
-						src={item.src}
-						alt={`${item.title}Img`}
-						className="w-full object-cover rounded-[10px] group-hover:scale-[1.09]  transform duration-[1s] ease-[.4,0,.2,1]"
-					/>
+					<div className="relative aspect-[3/2]">
+						<Image
+							src={item.src}
+							alt={`${item.title}Img`}
+							fill
+							className="object-cover rounded-[10px] group-hover:scale-[1.09]  transform duration-[1s] ease-[.4,0,.2,1]"
+						/>
+					</div>
 				</Link>
 				<div
 					style={{ left: item.id % 2 == 0 ? "-15%" : "90%" }}

@@ -7,7 +7,8 @@ import { Button, Ratings } from "@/components";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Clients() {
-	const [activeAccordion, setActiveAccordion] = useState(clientsItem[0].id);
+	const items = clientsItem.slice(0, 3);
+	const [activeAccordion, setActiveAccordion] = useState(items[0]?.id);
 	const toggleAccordion = (itemId: any) => {
 		setActiveAccordion((prev) => (prev === itemId ? null : itemId));
 	};
@@ -17,7 +18,7 @@ export default function Clients() {
 			<h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry pb-[50px]">
 				Clients’ reviews
 			</h1>
-			{clientsItem.map((item) => (
+			{items.map((item) => (
 				<div
 					key={item.id}
 					className={`w-full flex py-[10px] flex-col ${
@@ -104,6 +105,8 @@ export default function Clients() {
 												<Image
 													src={item.src}
 													alt="clientImg"
+													width={130}
+													height={130}
 													className="w-full h-full object-cover rounded-[10px]"
 												/>
 											</div>

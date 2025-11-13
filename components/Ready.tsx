@@ -18,7 +18,7 @@ export default function Ready() {
 
 	return (
 		<section
-			className="w-full relative z-30 min-h-screen sm:h-screen xm:h-screen bg-[#0D1B2A] padding-y rounded-t-[20px] mt-[-20px]"
+			className="w-full relative z-30 min-h-screen sm:h-screen xm:h-screen bg-[#0D1B2A] padding-y rounded-t-[20px] mt-[-80px] lg:mt-[-70px] md:mt-[-60px] sm:mt-[-40px] xm:mt-[-30px]"
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex flex-col gap-[10px]">

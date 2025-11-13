@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Head from "next/head";
 import { Curve, Marquee, Ready } from "@/components";
 import { About, Clients, Hero, Projects, VideoHome } from "@/container";
 
@@ -13,6 +14,10 @@ export default function Home() {
 
 	return (
 		<>
+			<Head>
+				<title>brandboosters marketing agency</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			</Head>
 			<Curve backgroundColor={"#FAF7F2"}>
 				<Hero />
 				<div className="w-full bg-marquee z-10 relative rounded-t-[20px] padding-y">
