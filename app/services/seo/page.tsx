@@ -1,6 +1,8 @@
 import { Metadata } from "next";
-import Hero from "@/container/seo-page/Hero";
-import About from "@/container/seo-page/About";
+import dynamic from 'next/dynamic';
+
+// Import the client component
+const SEOPageClient = dynamic(() => import('./SEOPageClient'), { ssr: false });
 
 export const metadata: Metadata = {
   title: "SEO Services | BrandBoosters",
@@ -8,10 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function SEOServicesPage() {
-  return (
-    <main className="w-full min-h-screen bg-white">
-      <Hero />
-      <About />
-    </main>
-  );
+  return <SEOPageClient />;
 }
