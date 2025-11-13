@@ -15,7 +15,13 @@ export default function WaveAnimation() {
 
     const wave = waveRef.current;
     const path = pathRef.current;
-    const points = [];
+    
+    interface Point {
+      x: number;
+      y: number;
+    }
+    
+    const points: Point[] = [];
     const segments = 50;
     const height = 100;
     
