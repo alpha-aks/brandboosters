@@ -1,7 +1,7 @@
 "use client";
 
 import { Video, Film, Camera, Edit3, PlayCircle, Zap } from "lucide-react";
-import ServiceTemplate from "../service-template/ServiceTemplate";
+import ServiceTemplate from "@/app/_components/service-template/ServiceTemplate";
 import { useEffect, useState } from 'react';
 
 export default function VideoEditingClient() {

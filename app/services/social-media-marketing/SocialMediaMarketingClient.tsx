@@ -1,7 +1,7 @@
 "use client";
 
 import { Share2 } from "lucide-react";
-import ServiceTemplate from "../service-template/ServiceTemplate";
+import ServiceTemplate from "@/app/_components/service-template/ServiceTemplate";
 import { useEffect, useState } from 'react';
 
 export default function SocialMediaMarketingClient() {

@@ -1,7 +1,7 @@
 "use client";
 
 import { BarChart3, Users, Share2, Target, Zap, TrendingUp } from "lucide-react";
-import ServiceTemplate from "../service-template/ServiceTemplate";
+import ServiceTemplate from "@/app/_components/service-template/ServiceTemplate";
 import { useEffect, useState } from 'react';
 
 export default function ChannelMarketingClient() {
