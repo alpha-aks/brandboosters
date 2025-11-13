@@ -152,7 +152,7 @@ export default function WebDevelopmentClient() {
             >
               <div className="bg-white p-6 sm:p-8 rounded-xl h-full">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Get Started</h3>
-                <p className="text-gray-600 mb-6">Ready to build or revamp your website? Let's create something amazing together.</p>
+                <p className="text-gray-600 mb-6">Ready to build or revamp your website? Let&apos;s create something amazing together.</p>
                 <button 
                   onClick={() => router.push('/contact')}
                   className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 group"
