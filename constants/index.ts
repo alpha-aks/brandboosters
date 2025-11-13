@@ -9,7 +9,7 @@ export const navbarItems = [
    },
    {
       id: 2,
-      title: "Our work",
+      title: "Onboarding Process",
       href: "/services",
    },
    {

@@ -7,7 +7,7 @@ import { text, curve, translate } from "@/motion";
 const routes = {
 	"/": "Home",
 	"/services": "Services",
-	"/presentation": "Our Work",
+	"/presentation": "Services",
 	"/ochi-team": "About Us",
 	"/insights": "Insights",
 	"/contact": "Contact Us",
